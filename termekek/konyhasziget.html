@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Konyhasziget kihúzható asztallal – konfigurátor | Erényi Bútor</title>
+<meta name="description" content="Állítsd össze saját konyhaszigetedet kihúzható asztallal: válassz EGGER dekort a munkalapra, asztallapra, bútorszínre és a henger lábra, nézd meg azonnal, és kérj árajánlatot egy kattintással.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-base="../">
+
+<div id="site-header"></div>
+
+<main>
+
+  <section style="padding:28px 0 0;">
+    <div class="container">
+      <p class="breadcrumb"><a href="../index.html">Termékeink</a> / Konyhasziget</p>
+    </div>
+  </section>
+
+  <section style="padding-top:14px; padding-bottom:48px;">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Állandó termék · 01</p>
+        <h1>Konyhasziget kihúzható asztallal</h1>
+        <p class="lead">
+          Kompakt konyhasziget tárolóval és munkafelülettel, amelynek oldalából egy kerek záródású
+          asztallap húzható ki – a kihúzott véget egy gyűrűzött hengeres láb támasztja alá. Csukva
+          munkapult és tárolószekrény, kihúzva teljes értékű étkezőasztal.
+        </p>
+      </div>
+      <div class="media-grid" id="media-grid"><!-- JS tölti fel: products.js → gallery --></div>
+    </div>
+  </section>
+
+  <!-- KONFIGURÁTOR -->
+  <section class="bg-cream" id="konfigurator">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Konfigurátor</p>
+        <h2>Állítsd össze a saját konyhaszigeted</h2>
+        <p class="lead">Négy elem színét állíthatod egymástól függetlenül, valódi EGGER dekorok közül – a változás azonnal látható az illusztráción.</p>
+      </div>
+
+      <div class="configurator">
+        <div id="parts-column">
+          <!-- JS tölti fel: egy .part-block ide minden alkatrészhez (configurator.js) -->
+        </div>
+
+        <div class="preview-panel">
+          <div class="preview-panel__stage">
+            <svg id="island-illustration" viewBox="0 0 640 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A konyhasziget illusztrációja a kiválasztott színekkel">
+              <defs>
+                <pattern id="pat-munkalap" patternUnits="objectBoundingBox" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <image id="img-munkalap" href="../assets/img/egger/F812_9.jpg" x="0" y="0" width="1" height="1" preserveAspectRatio="xMidYMid slice"/>
+                </pattern>
+                <pattern id="pat-asztallap" patternUnits="objectBoundingBox" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <image id="img-asztallap" href="../assets/img/egger/F812_9.jpg" x="0" y="0" width="1" height="1" preserveAspectRatio="xMidYMid slice"/>
+                </pattern>
+                <pattern id="pat-butor" patternUnits="objectBoundingBox" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <image id="img-butor" href="../assets/img/egger/W1000_9.jpg" x="0" y="0" width="1" height="1" preserveAspectRatio="xMidYMid slice"/>
+                </pattern>
+                <pattern id="pat-hengerlab" patternUnits="objectBoundingBox" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <image id="img-hengerlab" href="../assets/img/egger/U211_9.jpg" x="0" y="0" width="1" height="1" preserveAspectRatio="xMidYMid slice"/>
+                </pattern>
+                <filter id="soft-shadow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feGaussianBlur stdDeviation="9"/>
+                </filter>
+              </defs>
+
+              <ellipse id="shadow-extended" cx="370" cy="368" rx="250" ry="20" fill="#404751" opacity="0.15" filter="url(#soft-shadow)"/>
+              <ellipse id="shadow-closed" cx="465" cy="368" rx="135" ry="18" fill="#404751" opacity="0.15" filter="url(#soft-shadow)"/>
+
+              <g id="part-extension">
+                <path d="M 340,212 L 140,212 C 95,214 95,172 210,177 L 410,177 Z" fill="#404751" opacity="0.18"/>
+                <path d="M 340,200 L 140,200 C 95,202 95,160 210,165 L 410,165 Z" fill="url(#pat-asztallap)" stroke="#404751" stroke-opacity="0.3" stroke-width="1.5"/>
+
+                <ellipse cx="176" cy="338" rx="27" ry="8" fill="url(#pat-hengerlab)" stroke="#404751" stroke-opacity="0.25"/>
+                <rect x="149" y="222" width="54" height="114" fill="url(#pat-hengerlab)"/>
+                <ellipse cx="176" cy="222" rx="27" ry="8" fill="url(#pat-hengerlab)"/>
+                <g opacity="0.18" stroke="#000" stroke-width="2">
+                  <line x1="159" y1="225" x2="159" y2="334"/>
+                  <line x1="170" y1="226" x2="170" y2="335"/>
+                  <line x1="182" y1="226" x2="182" y2="335"/>
+                  <line x1="193" y1="225" x2="193" y2="334"/>
+                </g>
+                <rect x="149" y="222" width="54" height="114" fill="none" stroke="#404751" stroke-opacity="0.3" stroke-width="1.5"/>
+              </g>
+
+              <g id="part-cabinet">
+                <polygon points="520,330 520,200 590,165 590,295" fill="url(#pat-butor)" stroke="#404751" stroke-opacity="0.3" stroke-width="1.5"/>
+                <polygon points="520,330 520,200 590,165 590,295" fill="#000" opacity="0.12"/>
+                <polygon points="340,330 520,330 520,200 340,200" fill="url(#pat-butor)" stroke="#404751" stroke-opacity="0.3" stroke-width="1.5"/>
+              </g>
+
+              <g id="part-countertop">
+                <path d="M 340,208 L 520,208 L 590,173 L 410,173 Z" fill="#404751" opacity="0.18"/>
+                <path d="M 340,200 L 520,200 L 590,165 L 410,165 Z" fill="url(#pat-munkalap)" stroke="#404751" stroke-opacity="0.3" stroke-width="1.5"/>
+              </g>
+            </svg>
+          </div>
+
+          <div class="state-toggle" id="state-toggle">
+            <button type="button" data-state="closed">Zárva</button>
+            <button type="button" data-state="extended" class="is-active">Kihúzva</button>
+          </div>
+
+          <div class="preview-panel__summary" id="config-summary"><!-- JS tölti fel --></div>
+
+          <div class="quote-box">
+            <h3>Kérek árajánlatot</h3>
+            <p>Add meg az elérhetőségedet (nem kötelező), majd kattints – a fenti konfigurációt automatikusan elküldjük.</p>
+
+            <div class="quote-form">
+              <div>
+                <label for="q-name">Név</label>
+                <input id="q-name" type="text" placeholder="Teljes név" autocomplete="name">
+              </div>
+              <div>
+                <label for="q-phone">Telefon</label>
+                <input id="q-phone" type="tel" placeholder="+36 30 ..." autocomplete="tel">
+              </div>
+              <div class="field-full">
+                <label for="q-email">E-mail</label>
+                <input id="q-email" type="email" placeholder="email@cim.hu" autocomplete="email">
+              </div>
+              <div class="field-full">
+                <label for="q-message">Megjegyzés (opcionális)</label>
+                <textarea id="q-message" rows="2" placeholder="Pl. kívánt szállítási határidő, helyiség mérete..."></textarea>
+              </div>
+            </div>
+
+            <div class="quote-actions">
+              <a href="#" id="quote-mailto-btn" class="btn btn-accent btn-lg btn-block">Árajánlatot kérek →</a>
+            </div>
+
+            <button class="btn btn-ghost" id="copy-summary-btn" type="button" style="margin-top:12px;">Konfiguráció másolása vágólapra</button>
+            <div class="copy-summary" id="copy-summary-text"></div>
+
+            <p class="quote-note">A gomb megnyitja az e-mail kliensedet egy előre kitöltött üzenettel az info@erenyibutor.hu címre. Ha ez nem indul el automatikusan, használd a másolás gombot, és illeszd be saját leveledbe.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GYIK -->
+  <section>
+    <div class="container">
+      <div class="section-head center">
+        <p class="eyebrow" style="justify-content:center;">Jó, ha tudod</p>
+        <h2>Gyakori kérdések</h2>
+      </div>
+      <div class="two-col">
+        <div>
+          <h3>Mennyire pontos a képernyőn látott szín?</h3>
+          <p>Az illusztráción és a mintákon valódi EGGER dekorfotók szerepelnek, de a kijelzők és a
+          fény miatt a végső szín mindig kissé eltérhet a fizikai laptól. Az árajánlat elkészítésekor
+          fizikai mintát is tudunk biztosítani, mielőtt megrendelnéd.</p>
+        </div>
+        <div>
+          <h3>Egyedi méretet is kérhetek?</h3>
+          <p>Igen – a megadott méretek a leggyakoribb választások, de a konyhád pontos adottságaihoz
+          szabva bármilyen méretben elkészítjük, ahogy az egyedi bútorainknál is szoktuk.</p>
+        </div>
+        <div>
+          <h3>Mi történik az árajánlat elküldése után?</h3>
+          <p>Ugyanaz a folyamat indul, mint egyedi megbízásainknál: felmérés, személyre szabott
+          árajánlat, igény esetén 3D látványterv, majd kivitelezés a budaörsi műhelyünkben.</p>
+        </div>
+        <div>
+          <h3>Más színkombinációt is kérhetek, mint ami itt szerepel?</h3>
+          <p>Ez egy szűkített válogatás a teljes EGGER kínálatból. Ha más dekort szeretnél, írj nekünk
+          – a teljes választékot megtalálod az
+          <a href="https://www.egger.com/hu/butor-es-belsoepiteszet/?country=HU" target="_blank" rel="noopener">EGGER oldalán</a> is.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer"></div>
+<div class="toast" id="toast"></div>
+
+<script src="../assets/js/data/egger-decors.js"></script>
+<script src="../assets/js/data/products.js"></script>
+<script src="../assets/js/layout.js"></script>
+<script src="../assets/js/configurator.js"></script>
+</body>
+</html>
